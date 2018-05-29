@@ -1,0 +1,12 @@
+public aspect HelloTimeAspectJ {
+
+	pointcut callTime(): call(* HelloAspectJDemo.tiempo(long));
+
+	before(): callTime() {
+		System.out.println("Before call tiempo");
+	}
+
+	after(): callTime() {
+		System.out.println("After call tiempo");
+	}
+}
