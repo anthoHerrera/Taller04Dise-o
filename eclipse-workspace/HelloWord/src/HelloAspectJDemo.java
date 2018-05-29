@@ -11,12 +11,12 @@ public class HelloAspectJDemo {
 	}
 	
 	public static void tiempo(long startTime) {
-		long estimatedTime = System.currentTimeMillis() - startTime; // joinpoint
+		long estimatedTime = System.nanoTime() - startTime; // joinpoint
 		System.out.println(estimatedTime);
 	}
 	
 	public static void main(String[] args) {  
-		long startTime = System.currentTimeMillis();	//joinpoint	
+		long startTime = System.nanoTime();	//joinpoint	
 
 		sayHello();	      
 		System.out.println("--------");	      
