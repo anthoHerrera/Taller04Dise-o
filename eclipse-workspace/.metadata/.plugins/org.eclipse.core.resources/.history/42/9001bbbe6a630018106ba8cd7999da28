@@ -10,7 +10,7 @@ public class HelloAspectJDemo {
 		System.out.println(name);
 	}
 	
-	public static void tiempo(long startTime) {//calcula el tiempo en nanosegundos
+	public static void tiempo(long startTime) {
 		long estimatedTime = System.nanoTime() - startTime; // joinpoint
 		System.out.println(estimatedTime);
 	}
